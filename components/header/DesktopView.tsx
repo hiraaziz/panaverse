@@ -49,15 +49,16 @@ export const DesktopNav = [
 const DesktopView = () => {
   return (
     <>
-      {DesktopNav.map((nav: desktop) => (
-        <Menu>
+      {DesktopNav.map((nav: desktop,ind:number) => (
+        <Menu key={ind}>
           <MenuButton fontWeight="bolder" letterSpacing="1px">
             {nav.menubutton}
           </MenuButton>
           <MenuList py="10px">
-            {nav.Items.map((item: route) => (
+            {nav.Items.map((item: route,index:number) => (
               <>
                 <MenuItem
+                  key={index}
                   fontWeight="bold"
                   color="#3d1362"
                   fontSize="13px"
