@@ -71,8 +71,8 @@ export default function Footer() {
           Network Automation, and Bioinformatics Technologies
         </Text>
 
-        {footerContent.map((footer: ContentType) => (
-          <Box display="flex" flexDirection="column" rowGap="10px">
+        {footerContent.map((footer: ContentType,ind:number) => (
+          <Box display="flex" flexDirection="column" rowGap="10px" key={ind}>
             <Heading as="ul" fontSize="14px" fontWeight="bolder">
               {footer.heading}
             </Heading>
@@ -87,8 +87,8 @@ export default function Footer() {
               rowGap="5px"
               w="200px"
             >
-              {footer.links.map((link: route) => (
-                <Text as="li"><Link href={link.route}>{link.name}</Link></Text>
+              {footer.links.map((link: route,index:number) => (
+                <Text as="li" key={index}><Link href={link.route}>{link.name}</Link></Text>
               ))}
             </Box>
           </Box>
