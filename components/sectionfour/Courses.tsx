@@ -42,7 +42,7 @@ export const Courses = () => {
         </Text>
       </Box>
 
-      {Data.map((datas) => (
+      {Data.map((datas,ind:number) => (
         <Box
           as="div"
           w="full"
@@ -52,6 +52,7 @@ export const Courses = () => {
           alignItems="center"
           columnGap="40px"
           rowGap="20px"
+          key={ind}
         >
           <Center
             w="280px"
@@ -77,7 +78,7 @@ export const Courses = () => {
             </Text>
           </Center>
 
-          {datas.quarters.map((quart)=>(
+          {datas.quarters.map((quart,index)=>(
              <Center
              w="280px"
              h={{base:'200px',lg:"280px"}}
@@ -86,6 +87,7 @@ export const Courses = () => {
              rowGap="20px"
              borderRadius="32px"
              boxShadow='xl'
+             key={index}
            >
              <Heading
                textAlign="center"
