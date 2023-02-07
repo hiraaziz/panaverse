@@ -57,6 +57,7 @@ export default function Footer() {
         rowGap="30px"
         alignContent="center"
         mt={{ base: "30px", xl: "0px" }}
+        mb='10px'
         flexDirection={{ base: "column", xl: "row" }}
         justifyContent={{ base: "center", xl: "space-evenly" }}
       >
@@ -73,12 +74,12 @@ export default function Footer() {
 
         {footerContent.map((footer: ContentType,ind:number) => (
           <Box display="flex" flexDirection="column" rowGap="10px" key={ind}>
-            <Heading as="ul" fontSize="14px" fontWeight="bolder">
+            <Heading as="ul" fontSize="14px" fontWeight="black" letterSpacing='2px'>
               {footer.heading}
             </Heading>
             <Box
               fontSize="12px"
-              fontWeight={{ base: "medium", lg: "bold" }}
+              fontWeight={{ base: "medium", lg: "medium" }}
               style={{ listStyle: "none" }}
               display="flex"
               flexDirection="column"
