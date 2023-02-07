@@ -1,9 +1,10 @@
-import React from 'react'
+"use client";
+import { Box } from '@chakra-ui/react'
 
-const privacy = () => {
+const page = () => {
   return (
-    <div>Privacy and policy page</div>
+    <Box h='41.8vh'>Privacy and Policy Page</Box>
   )
 }
 
-export default privacy
+export default page
