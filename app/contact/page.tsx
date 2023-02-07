@@ -1,8 +1,9 @@
-import React from 'react'
+"use client";
+import { Box } from '@chakra-ui/react'
 
 const page = () => {
   return (
-    <div>Contact us page</div>
+    <Box h='41.8vh'>Contact Us</Box>
   )
 }
 
