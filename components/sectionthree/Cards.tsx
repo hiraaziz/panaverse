@@ -100,7 +100,7 @@ export default function Cards() {
       >
         {CardInfo.map((card:cardtype,ind:number) => (
           <Container
-            w={{ base: "330px", md: "300px", xl: "380px" }}
+            w={{ base: "300px", md: "300px", xl: "380px" }}
             h={{ base: "350px", md: "380px", xl: "500px" }}
             boxShadow="#BFBFBF 18px 20px 18px -7px"
             m="0px"
