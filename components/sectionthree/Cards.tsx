@@ -107,7 +107,7 @@ export default function Cards() {
             key={ind}
           >
             <Link href={card.route}>
-              <VStack spacing={8}>
+              <VStack spacing={{base:4,lg:8}}>
                 <Circle
                   as="div"
                   size={{ base: "80px", lg: "100px" }}
