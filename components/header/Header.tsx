@@ -87,7 +87,7 @@ export default function Header() {
         justifyContent="space-between"
         py="10px"
         px="20px"
-        bgColor="transparent"
+        bgGradient="linear(280deg, #F5EEFE,#F5EEFE,#F7EEFF,#FFFFFF)"
         zIndex={2}
       >
         <Box as="div" mx="10px" my="5px">
