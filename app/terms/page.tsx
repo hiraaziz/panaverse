@@ -1,8 +1,9 @@
-import React from 'react'
+"use client";
+import { Box } from '@chakra-ui/react'
 
 const page = () => {
   return (
-    <div>Terms and Conditions</div>
+    <Box h='41.8vh'>Terms and Conditions</Box>
   )
 }
 
